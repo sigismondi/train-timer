@@ -4,7 +4,7 @@
 // added analystics for fun
 
 var firebaseConfig = {
-    apiKey: "AIzaSyCGyshcvOUxKhTAgMtuLuIToiKs8WW10J4",
+    apiKey: "",
     authDomain: "train-scheduler-66642069.firebaseapp.com",
     databaseURL: "https://train-scheduler-66642069.firebaseio.com",
     projectId: "train-scheduler-66642069",
@@ -29,7 +29,7 @@ var minutes = 0;
 ("#run-search").on("click", function (event) {
     event.preventDefault()
     //variales to pull user input from textbox
-    var train = $("#trainName")
+    var train = $("#train")
         .val().trim();
     var destination = $("#destination")
         .val().trim();
@@ -41,5 +41,5 @@ var minutes = 0;
         name: trainName,
         destination: destination,
         time: trainTime,
-        frequency: frequency
-    };
+        frequency: frequency,
+    }:
